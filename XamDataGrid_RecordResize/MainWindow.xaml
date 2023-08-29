@@ -1,0 +1,19 @@
+﻿<Window
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:XamDataGrid_RecordResize"
+        x:Class="XamDataGrid_RecordResize.MainWindow"
+        mc:Ignorable="d"
+        xmlns:igDP="http://infragistics.com/DataPresenter"
+        Title="MainWindow" Height="450" Width="550">
+
+    <Grid>
+        <igDP:XamDataGrid x:Name="DataGrid" BindToSampleData="True">
+            <igDP:XamDataGrid.FieldLayoutSettings>
+                <igDP:FieldLayoutSettings DataRecordSizingMode="IndividuallySizable"/>
+            </igDP:XamDataGrid.FieldLayoutSettings>
+        </igDP:XamDataGrid>
+    </Grid>
+</Window>
